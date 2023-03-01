@@ -12,6 +12,7 @@ Random labels.
 Exercise:
 =
 I will compare the KL divergence values of Bayesian neural networks models trained on MNIST with and without the labelrandomization process.
+
 Without randomization:
 =
 i.A classifier trained on the full dataset.

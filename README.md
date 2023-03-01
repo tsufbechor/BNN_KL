@@ -8,6 +8,7 @@ distribution Q to the posterior probability distribution P.
 A posterior probability is the probability of assigning observations to groups given the data. A prior 
 probability is the probability that an observation will fall into a group before you collect the data.
 Random labels.
+
 Bayesian Neural Network:
 =
 Bayesian neural network (BNN) combines neural network with Bayesian inference. Simply speaking, in BNN, we treat the weights and outputs as the variables and we are finding their marginal distributions that best fit the data

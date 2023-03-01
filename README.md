@@ -15,7 +15,7 @@ I will compare the KL divergence values of Bayesian neural networks models train
 
 Without randomization:
 =
-i.A classifier trained on the full dataset.
+i. A classifier trained on the full dataset.
 ii. A classifier trained on the first 200 samples of MNIST.
 iii. A classifier trained on the 200 first ‘3’ and ‘8’ samples.
 iv. A classifier on all ‘3’ and ‘8’ samples.
@@ -23,3 +23,17 @@ iv. A classifier on all ‘3’ and ‘8’ samples.
 With randomization:
 =
 Using the first 200 samples of MNIST, I generated a random label for each sample from Bernoulli distribution
+
+Results:
+=
+![image](https://user-images.githubusercontent.com/81694762/222192891-d313297d-a8a5-4341-9bde-a2250f3b31a1.png)
+
+Conclusions:
+=
+An important conclusion from this exercise is the fact that decrease in KL divergence from epoch to 
+epoch is very strongly correlated to the number of training examples the model was trained on. The 
+steepest decrease was found in the first model trained on all examples, followed by the model 
+trained on only 2s and 8s.
+Intuitively, it makes sense that the distance between P and Q (Posterior and Prior) are a function of 
+the number of samples the model is trained on but I must explore this topic further to determine if 
+this is universally true.

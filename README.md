@@ -14,6 +14,18 @@ Bayesian Neural Network:
 =
 Bayesian neural network (BNN) combines neural network with Bayesian inference. Simply speaking, in BNN, we treat the weights and outputs as the variables and we are finding their marginal distributions that best fit the data
 
+Architecture:
+=
+In this exercise I used the Blitz library for Bayesian Neural Networks.
+The model has three Bayesian linear layers, and two Convolution 2D layers.
+The shape of the Bayesian linear layers are: (256, 120), (120,84), (84,10).
+The shape of the convolutional layers are: (1, 6, (5, 5)), (6, 16, (5, 5)).
+The activation function is relu, and after each convolutional layer there is max-pooling (2).
+I found that max-pooling was essential to our network because it reduces the computational cost by 
+reducing the number of parameters to learn for the model.
+Optimizer: Adam with 0.001 learning rate.
+
+
 Exercise:
 =
 I will compare the KL divergence values of Bayesian neural networks models trained on MNIST with and without the labelrandomization process.
